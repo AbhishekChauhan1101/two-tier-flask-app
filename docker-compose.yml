@@ -23,7 +23,7 @@ services:
       start_period: 60s
 
   flask-app:
-    image: silent5663/two-tier-flask-app/two-tier-flask-app:latest
+    image: silent5663/two-tier-flask-app:latest
     container_name: flask-app
     ports:
       - "5000:5000"
