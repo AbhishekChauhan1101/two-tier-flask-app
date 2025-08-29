@@ -115,7 +115,11 @@ docker run -d \
     flaskapp:latest
 
 ```
-
+iii) Cleaning
+```bash
+docker system prune\
+docker rmi $(docker images -aq)
+```
 ## Notes
 
 - Make sure to replace placeholders (e.g., `your_username`, `your_password`, `your_database`) with your actual MySQL configuration.
